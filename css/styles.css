@@ -46,3 +46,58 @@ header nav a:hover,
 header nav a.active {
     color: #FFF;
 }
+
+
+/* ----Main Movie */
+
+.main-movie {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #ffffff;
+    background: linear-gradient(rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50)100%), url("../img/backdrop.jpg");
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12;
+    display: flex;
+    align-items: end;
+}
+
+.main-movie .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.main-movie .title {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.main-movie .description {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.main-movie .button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.32em;
+    padding: 0.93em 1.87em;
+    color: #ffffff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 1.12em;
+}
+
+.main-movie .button:hover {
+    background: #ffffff;
+    color: #000;
+}
+
+.main-movie .button i {
+    margin-right: 0.9em;
+}
