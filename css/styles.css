@@ -57,7 +57,7 @@ header nav a.active {
     background: linear-gradient(rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50)100%), url("../img/backdrop.jpg");
     background-position: center center;
     background-size: cover;
-    margin-bottom: 3.12;
+    margin-bottom: 3.12em;
     display: flex;
     align-items: flex-end;
 }
@@ -113,7 +113,7 @@ header nav a.active {
 
 .contenedor-title-controls h3 {
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .contenedor-title-controls .indicators button {
@@ -220,5 +220,18 @@ header nav a.active {
     }
     .main-movie .description {
         max-width: 100%;
+    }
+    .recomended-movies .contenedor-carrousel {
+        overflow: visible;
+    }
+    .recomended-movies .contenedor-carrousel .carrousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .recomended-movies .indicators,
+    .recomended-movies .left-arrow,
+    .recomended-movies .right-arrow {
+        display: none;
     }
 }
