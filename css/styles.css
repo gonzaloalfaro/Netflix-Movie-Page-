@@ -103,6 +103,107 @@ header nav a.active {
 }
 
 
+/* --- Title container and controls */
+
+.contenedor-title-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contenedor-title-controls h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contenedor-title-controls .indicators button {
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 2px;
+}
+
+.contenedor-title-controls .indicators button:hover,
+.contenedor-title-controls .indicators button .active {
+    background: #e50914;
+}
+
+
+/* ---Main container and arrows */
+
+.recomended-movies {
+    margin-bottom: 1.25em;
+}
+
+.recomended-movies .main-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.recomended-movies .main-container .left-arrow,
+.recomended-movies .main-container .right-arrow {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.recomended-movies .main-container .left-arrow:hover,
+.recomended-movies .main-container .right-arrow:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.recomended-movies .main-container .left-arrow {
+    left: 0;
+}
+
+.recomended-movies .main-container .right-arrow {
+    right: 0;
+}
+
+
+/* Carrousel */
+
+.recomended-movies .contenedor-carrousel {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.recomended-movies .contenedor-carrousel .carrousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.recomended-movies .contenedor-carrousel .carrousel .movie {
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.recomended-movies .contenedor-carrousel .carrousel .movie.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.recomended-movies .contenedor-carrousel .carrousel .movie img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
 /* --- Media queries / Mobile  */
 
 @media screen and (max-width: 800px) {
